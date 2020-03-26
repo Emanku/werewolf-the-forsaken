@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "werewolf-the-forsaken"
+    }
+  },
+  "defaultProject": "werewolf-the-forsaken",
+  "cli": {
+    "analytics": "81b081aa-deb7-4762-8a69-0765b060abe3"
+  }
 }
