@@ -121,6 +121,10 @@
               "devServerTarget": "werewolf-the-forsaken:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

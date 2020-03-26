@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "werewolf-the-forsaken": {
+      "hosting": {
+        "werewolf-the-forsaken": [
+          "werewolf-the-forsaken"
+        ]
+      }
+    }
+  }
+}
