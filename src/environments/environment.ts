@@ -5,14 +5,14 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: 'AIzaSyDgqxZKs0aHutrcI4SclnrFavz0eTqgT1w',
+    apiKey: 'AIzaSyBRRCHqbEeioE9jL4IY6MUA3KReNX4ngdo',
     authDomain: 'werewolf-the-forsaken.firebaseapp.com',
     databaseURL: 'https://werewolf-the-forsaken.firebaseio.com',
     projectId: 'werewolf-the-forsaken',
     storageBucket: 'werewolf-the-forsaken.appspot.com',
     messagingSenderId: '242088202821',
-    appId: '1:242088202821:web:41a2f2975a42e1dbcc892c',
-    measurementId: 'G-2CYS66S6D7'
+    appId: '1:242088202821:web:bc1c64e2146d2100cc892c',
+    measurementId: 'G-06XKQVE346'
   }
 };
 
