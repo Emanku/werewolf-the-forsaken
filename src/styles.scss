@@ -1,10 +1,44 @@
 
-@import '~normalize.css';
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$werewolf-the-forsaken-primary: mat-palette($mat-indigo);
+$werewolf-the-forsaken-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$werewolf-the-forsaken-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$werewolf-the-forsaken-theme: mat-light-theme($werewolf-the-forsaken-primary, $werewolf-the-forsaken-accent, $werewolf-the-forsaken-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($werewolf-the-forsaken-theme);
 
 :root {
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   cursor: default;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 header.page-header {
@@ -15,31 +49,5 @@ header.page-header {
 
   h1 {
     margin: 0;
-  }
-}
-
-.button-link {
-	box-shadow:inset 0px 1px 0px 0px #97c4fe;
-	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
-	background-color:#3d94f6;
-	border-radius:6px;
-	border:1px solid #337fed;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:6px 24px;
-	text-decoration:none;
-  text-shadow:0px 1px 0px #1570cd;
-
-  &:hover {
-    background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
-    background-color:#1e62d0;
-  }
-  &:active {
-    position:relative;
-    top:1px;
   }
 }
